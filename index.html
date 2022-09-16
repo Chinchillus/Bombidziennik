@@ -1,0 +1,686 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<meta http-equiv="Content-Language" content="pl"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Window-target" content="_top"/>
+<title>Elektroniczny Dziennik - przegląd planu zajęć uczniów</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="Author" content="Boucik 69420 INC."/>
+<meta name="ROBOTS" content="ALL"/>
+<meta name="revisit-after" content="1 day"/>
+<link rel="stylesheet" type="text/css" href="https://zspkokanin.mobidziennik.pl/szablony/szablon1/wspolne/css/styl.css?ver=16.2"/>
+<link rel="stylesheet" type="text/css" href="https://zspkokanin.mobidziennik.pl/szablony/szablon1/dziennik/css/styl-dziennik.css?ver=16.2"/>
+<script src="https://zspkokanin.mobidziennik.pl/js/jquery-2.2.1.min.js?jsv=2022_09_12" type="text/javascript"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/jquery-migrate.min.js?jsv=2022_09_12"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/jquery.form.js?jsv=2022_09_12" type="text/javascript"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/jquery.checkbox.js?jsv=2022_09_12" type="text/javascript"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/jquery.mask.min.js?jsv=2022_09_12" type="text/javascript"></script>
+<link href="https://zspkokanin.mobidziennik.pl/biblioteki/dropdown/dropdown.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://zspkokanin.mobidziennik.pl/biblioteki/dropdown/themes/dziennik/default.advanced.css" media="all" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://zspkokanin.mobidziennik.pl/biblioteki/jquery_ui/jquery-ui-1.10.3.custom.min.js?jsv=2022_09_12"></script>
+<script type="text/javascript" src="https://zspkokanin.mobidziennik.pl/biblioteki/jquery_ui/i18n/jquery.ui.datepicker-pl.js?jsv=2022_09_12"></script>
+<link rel="stylesheet" type="text/css" href="https://zspkokanin.mobidziennik.pl/biblioteki/jquery_ui/themes/excite-bike/jquery.ui.all.css"/>
+<link rel="stylesheet" type="text/css" href="https://zspkokanin.mobidziennik.pl/biblioteki/tipsy/tipsy.css"/>
+<link rel="stylesheet" type="text/css" href="https://zspkokanin.mobidziennik.pl/biblioteki/tipsy/tipsy-docs.css"/>
+<script src="https://zspkokanin.mobidziennik.pl/biblioteki/tipsy/jquery.tipsy.js?jsv=2022_09_12" type="text/javascript"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/skrypty_funkcje.js?ver=16.2&jsv=2022_09_12" type="text/javascript"></script>
+<script src="https://zspkokanin.mobidziennik.pl/js/skrypty.js?ver=16.2&jsv=2022_09_12" type="text/javascript"></script>
+<link rel="Shortcut Icon" type="image/png" href="https://zspkokanin.mobidziennik.pl/grafika/mobidziennik-app.png"/>
+</head>
+
+<body 
+    contextmenu="body_right_click_menu" 
+    uid="534"
+    >
+        <!-- TOP -->
+    <div id="top_green">
+      <div class="width1000">
+        <div class="logo">
+
+                    <h1><span style ="color:#00FF8F;style="">Bombi</span><span">-</span><span style="color:red;">Dziennik</span>
+              <small>
+                      ver. 69.420, 2022/2023                  </a>
+
+                                </small>
+          </h1>
+        </div>
+        
+                        
+            <span id="wyloguj_box" tabindex="0" title="Giga Srakens">
+    <span id="rola">
+            
+        
+    </span>
+    
+    <div id="profil_box">
+        <ul>
+            <li class="li_no_hover">
+                <strong>Giga Srakens</strong>
+                                    <small class="szary2">
+                        <br/>
+                        Zespół Downa                   </small>
+                                        
+            </li>
+            
+                            <li><a href="://zspkokanin.mobidziennik.pl/dziennik/poprzednielata" title="Przeglądaj archiwalne dzienniki">Poprzednie lata</a></li>
+                            <li><a href="://zspkokanin.mobidziennik.pl/dziennik/edytujprofil" title="Przegląd i zarządzanie kontem">Moje konto</a></li>
+            <li><a href="://zspkokanin.mobidziennik.pl/dziennik/wyloguj" title="Wyloguj się z systemu" id="wyloguj">Wyloguj</a></li>
+        </ul>
+    </div>
+    
+</span>
+
+<style type="text/css">
+    #wyloguj_box {
+        color: #fff;
+        font-size: 10pt;
+        margin-right: 15px;
+        text-shadow: 1px 1px 0px #222;
+        cursor:pointer;
+    }
+    /*#wyloguj_box:hover #rola {
+        background:#fff;
+    }*/
+    #profil_box {
+        position:absolute;
+        background:#1783db;        
+        /* border:Solid 1px #1783DB; */
+        z-index:99999999999999999999999 !important;
+        /*box-shadow: 0 2px 10px rgba(0,0,0,.2);*/
+        text-align:left;        
+        display:none;
+        top:50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    }
+    #profil_box ul {
+        list-style-type: none;
+        text-shadow: none;
+        color:#fff;
+        margin:0px;
+        padding:0px;
+    }
+    #profil_box ul li {
+        border-bottom:Solid 1px #1a90f1;        
+    }
+    #profil_box ul li.przelacz_konto {
+        padding-left:30px;
+    }
+    .li_no_hover {
+        padding:10px 17px;        cursor:default;
+        background:#1577C1;
+    }
+    #profil_box ul li:not(.li_no_hover):hover {
+        -webkit-transition:all 0.2s;transition: all 0.2s;
+        background-color:#186eb3;        color:#fff;
+    }
+    #profil_box a {
+        text-shadow: none;
+        color:#fff;
+        display:block;
+        text-decoration:none;
+        padding:10px 17px;        margin:0;
+    }
+    #profil_box a:hover, #profil_box a:hover > * {
+        color:#fff;     }
+    .szary2 {
+        color:#e6e6e6;
+    }
+    .arrow_down {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 4px dashed;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;        
+    }
+    #profil_box ul li.edytuj_wyloguj {
+        float:left;
+        width:50%
+    }
+</style>
+
+<script type="text/javascript">
+$(document).ready(
+    function()
+    {
+        var wyloguj = $('#wyloguj_box');
+        var profil_box = $('#profil_box');
+
+        $(window).resize(function(){       
+            profil_box.css('right',$(document).width() - (wyloguj.offset().left + wyloguj.width()));
+        }); 
+        $(window).resize();
+
+        var profil_box_interval;
+
+        var wylogujOn = function(){
+            if(profil_box_interval!=undefined){
+                clearTimeout(profil_box_interval);
+            }                
+            profil_box.show();
+        };
+        
+        var wylogujOff = function(){
+            profil_box_interval = setTimeout(function(){profil_box.hide()},500);
+        };
+        
+        wyloguj.mouseenter(wylogujOn).focusin(wylogujOn);
+        wyloguj.mouseleave(wylogujOff).focusout(wylogujOff);
+        
+    }
+);
+</script>            
+                       
+        </div>
+        <div class="cleft"></div>
+      </div>
+    </div>
+
+    <div id="menu_gray">
+      <div class="width1000">
+        <!-- MENU START -->
+        <ul class="dropdown dropdown-horizontal">
+
+             <li><a id="menu2" href="://zspkokanin.mobidziennik.pl/dziennik/planlekcji?typ=podstawowy">Plan lekcji</a></li>                              
+        </ul>
+        <div class="cleft"></div>
+            <!-- MENU STOP -->
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+        <a name="tresc"></a>
+    <div class="fright nieDoDruku" style="margin-top:15px">
+        <a 
+            class="button_right button_switch button_switch-on" 
+        >Bocikowanie 69</a>  
+		
+</div>
+<h1 class="nieDoDruku" style="margin-bottom:35px;">Plan lekcji</h1>
+<div style="clear:both"></div>
+
+      
+        <div class="plany-cnt" id="plan-uczen-57"> 
+            <h1 style="font-size:13pt;">
+                Giga Srakens                <div class="fright">
+                    <a 
+            class="button_right" 
+            href="://zspkokanin.mobidziennik.pl/dziennik/planlekcji?typ=podstawowy&drukujplan=57" title="Drukuj plan" style="margin-top:-3px;" 
+        >Drukuj plan ucznia</a>                </div>
+            </h1>
+            
+            
+        <style>
+            /* Plan blokowy - scalony */
+            .plansc{min-width: 600px;font-family: "Trebuchet MS", Arial, "Times New Roman", Times, serif;margin:5px 0 30px 0;width:100%;position:relative;float:left;}
+            .plansc_top{margin:0 0 1% 0;padding:0 0 0 4.5%;width:95.5%;height:2.5%;min-height:35px;float:left;border-bottom:1px solid #ccc;}
+            .plansc_top > div{width:20%;text-align:center;font-size:15px;font-weight:bold;float:left;position:relative;}
+            .plansc_top > div .plansc_dw{position:relative;top:0;font-size:10px;background: #ffdd76;padding: 1px 3px;line-height: 17px;border: 1px solid #e1bc4b;-webkit-border-top-left-radius: 3px;-webkit-border-top-right-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-topright: 3px;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+
+            .plansc_cnt{margin:0 0 0 4.5%;width:95.5%;height:95%;position:relative;float:left;}
+            .plansc_cnt > .plansc_cnt_w{font-size: 14px;width:100%;height:10%;position:absolute;}
+            .plansc_cnt > .plansc_cnt_w > .bx{text-align:center;overflow:hidden;z-index:10;position:absolute;width:20%;height:99.5%;background:#eee;
+                                    border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+
+            .plansc_cnt > .plansc_cnt_w > .bx.pz{z-index:13;background:#8ec7ff;border:1px solid #61b1ff;}
+            .plansc_cnt > .plansc_cnt_w > .bx.pr{z-index:11;background:#98d293;border:1px solid #88bd84;}
+            .plansc_cnt > .plansc_cnt_w > .bx.pg{z-index:12;background:#a6e3de;border:1px solid #95ccc7;}
+            .plansc_cnt > .plansc_cnt_w > .bx.dz{z-index:15;background: #c6c5ec;border: 1px solid #9b99e6;}
+            .plansc_cnt > .plansc_cnt_w > .bx.lo{z-index:12;background: #FFF4C2;border: 1px solid #e8d991;}
+            .plansc_cnt > .plansc_cnt_w > .bx.lz{z-index:12;background: #FEDDC3;border: 1px solid #f9c399;}
+            .plansc_cnt > .plansc_cnt_w > .bx.lnz{z-index:12;background: #efd0d6;border: 1px solid #d6acb4;}
+            .plansc_cnt > .plansc_cnt_w > .bx.gp{z-index:10;background: #d1ffc2;border: 1px solid #afe49d;}   
+            .plansc_cnt > .plansc_cnt_w > .bx.gp{z-index:10;background-color: #d8f0ff;border: 1px solid #beddf1;}  
+            
+            .plansc_cnt > .plansc_cnt_w > .bx.ind{z-index:14;}
+            
+            .plansc_cnt > .plansc_cnt_w > .bx.wyj{display:none;}
+            
+            .plansc_cnt > .plansc_cnt_w > .bx:hover{z-index:16;}
+            
+            .plansc_cnt > .plansc_cnt_w > .bx > span{padding:0.5%;line-height:130%;}  
+
+            .plansc_godz{left:-4.5%;font-size:13px;width:104.5%;height:100%;position:absolute;}
+            .plansc_godz > div{width:100%;height:10px;border-top:1px dashed #ddd;position:absolute;}
+            .plansc_godz > div > span{width:3.5%;line-height:120%;text-align:center;top:-8px;background:#fff;position:relative;float:left;}
+            .plansc_godz > div > span b{z-index:1;top:5%;background:#fff;font-family:tahoma;font-size:15px;color:#0000ff;position:relative;}
+            .plansc_godz > div.plansc_godz_zak{color:#747474}
+            
+            table.ui-datepicker-calendar > tbody > tr > td a.ui-state-default-active{background:orange !important;}
+            @page {
+                size: A4;
+            }
+            @media print {
+                body { background: #ffffff; color: #000; }
+                #top_green, #menu_gray, #bottom, #ajax_loading_e_dziennik, .tipsy, .button_right, .width1000, .logo, .menu1, .cleft, .menu1 * {display:none !important;}
+                .plansc{height:100%;}/*height: 297mm !important;*/
+                .nieDoDruku, a.button, a.button_right {display:none !important;}
+                .doDruku {display:block !important;}
+                h1{font-size:16pt !important;margin-top:0 !important;padding-top:0 !important;}
+                .plansc_cnt > .plansc_cnt_w > .bx.wyj{display:block !important;}
+                .plansc_cnt > .plansc_cnt_w > .bx{background:#fff !important;}
+                .plansc_top > div{font-size:20px;}
+                .plansc_cnt > .plansc_cnt_w{font-size:15px !important;}
+                .plansc_cnt > .plansc_cnt_w b{font-size:17px;}
+                .plansc_cnt > .plansc_cnt_w .bx{border-width: 2px !important;}
+                .plansc_cnt > .plansc_cnt_w > .bx > span{line-height:110% !important;}  
+                .plansc_cnt > .plansc_cnt_w small{font-size:15px;}
+                .plansc_godz{font-size:16px;}
+                .plansc_godz > div > span{top:-10px;}
+                .plansc_godz > div > span b{font-size:18px;}
+                
+            }
+        </style><div class="plansc" style="height:768px;"><div class="plansc_top"><div style="width:20%" class="autoTooltip" title="12 września 2022">Poniedziałek</div><div style="width:20%" class="autoTooltip" title="13 września 2022">Wtorek</div><div style="width:20%" class="autoTooltip" title="14 września 2022">Środa</div><div style="width:20%" class="autoTooltip" title="15 września 2022">Czwartek</div><div style="width:20%" class="autoTooltip" title="16 września 2022">Piątek</div></div><div class="plansc_cnt"> 
+        <div class="plansc_cnt_w" style="top:0%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="08:00 - 08:45&lt;br /&gt;Skład Sraki&lt;br /&gt; Płotek (alkoholik) " tabindex="0">
+                <span><b>Skład Sraki</b><br /> Płotek (alkoholik) </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:0%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="08:00 - 08:45&lt;br /&gt;Pluton&lt;br /&gt; Niuton " tabindex="0">
+                <span><b>Pluton</b><br /> Niuton </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:0%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="08:00 - 08:45&lt;br /&gt;Genially&lt;br /&gt; Ms. Genially " tabindex="0">
+                <span><b>Genially</b><br /> Ms. Genially  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:0%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="08:00 - 08:45&lt;br /&gt;Pluton&lt;br /&gt; Niuton " tabindex="0">
+                <span><b>Pluton</b><br /> Niuton </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:0%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="08:00 - 08:45&lt;br /&gt;Genially&lt;br /&gt; Ms. Genially " tabindex="0">
+                <span><b>Genially</b><br /> Ms. Genially  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:11.458333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="08:55 - 09:40&lt;br /&gt;Genially&lt;br /&gt; Ms. Genially " tabindex="0">
+                <span><b>Genially</b><br /> Ms. Genially  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:11.458333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="08:55 - 09:40&lt;br /&gt;praca domowa&lt;br /&gt; Fanatyk osranych przystanków " tabindex="0">
+                <span><b>praca domowa</b><br /> Fanatyk osranych przystanków </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:11.458333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="08:55 - 09:40&lt;br /&gt;Genially&lt;br /&gt; Ms. Genially " tabindex="0">
+                <span><b>Genially</b><br /> Ms. Genially  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:11.458333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="08:55 - 09:40&lt;br /&gt;praca domowa&lt;br /&gt; Fanatyk osranych przystanków " tabindex="0">
+                <span><b>praca domowa</b><br /> Fanatyk osranych przystanków </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:11.458333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="08:55 - 09:40&lt;br /&gt;Genially&lt;br /&gt; Ms. Genially " tabindex="0">
+                <span><b>Genially</b><br /> Ms. Genially  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:22.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="09:50 - 10:35&lt;br /&gt;praca domowa&lt;br /&gt; Fanatyk osranych przystanków " tabindex="0">
+                <span><b>praca domowa</b><br /> Fanatyk osranych przystanków  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:22.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="09:50 - 10:35&lt;br /&gt;69420 x 2137&lt;br /&gt; Ms. Diagnoza " tabindex="0">
+                <span><b>69420 x 2137</b><br /> Ms. Diagnoza </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:22.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="09:50 - 10:35&lt;br /&gt;69420 x 2137&lt;br /&gt; Ms. Diagnoza " tabindex="0">
+                <span><b>69420 x 2137</b><br /> Ms. Diagnoza  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:22.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="09:50 - 10:35&lt;br /&gt;69420 x 2137&lt;br /&gt; Ms. Diagnoza " tabindex="0">
+                <span><b>69420 x 2137</b><br /> Ms. Diagnoza  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:22.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="09:50 - 10:35&lt;br /&gt;Kup worda&lt;br /&gt; Cukrzyk " tabindex="0">
+                <span><b>Kup worda</b><br /> Cukrzyk </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:34.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="10:45 - 11:30&lt;br /&gt;J. Polski&lt;br /&gt; Drogi użytkownik " tabindex="0">
+                <span><b>J. Polski</b><br /> Drogi użytkownik  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:34.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="10:45 - 11:30&lt;br /&gt;Ekologicznie&lt;br /&gt; Płotek (alkoholik) " tabindex="0">
+                <span><b>Ekologicznie</b><br /> Płotek (alkoholik)  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:34.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="10:45 - 11:30&lt;br /&gt;69420 x 2137&lt;br /&gt; Ms. Diagnoza " tabindex="0">
+                <span><b>69420 x 2137</b><br /> Ms. Diagnoza </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:34.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="10:45 - 11:30&lt;br /&gt;J. Polski&lt;br /&gt; Drogi użytkownik " tabindex="0">
+                <span><b>J. Polski</b><br /> Drogi użytkownik  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:34.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="10:45 - 11:30&lt;br /&gt;69420 x 2137&lt;br /&gt; Ms. Diagnoza " tabindex="0">
+                <span><b>69420 x 2137</b><br /> Ms. Diagnoza </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:47.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="11:50 - 12:35&lt;br /&gt;ZSSR&lt;br /&gt; Ms. Uwaga " tabindex="0">
+                <span><b>ZSSR</b><br /> Ms. Uwaga  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:47.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="11:50 - 12:35&lt;br /&gt;N.C.M.T&lt;br /&gt; Ms. Uwaga " tabindex="0">
+                <span><b>N.C.M.T</b><br /> Ms. Uwaga  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:47.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="11:50 - 12:35&lt;br /&gt;Atak terrorystyczny&lt;br /&gt; Zobaczymy jak bomba pierdolnie " tabindex="0">
+                <span><b>Atak terrorystyczny</b><br /> Zobaczymy jak bomba pierdolnie  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:47.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="11:50 - 12:35&lt;br /&gt;Szmetterlink&lt;br /&gt; Achtung " tabindex="0">
+                <span><b>Szmetterlink</b><br /> Achtung  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:47.916666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="11:50 - 12:35&lt;br /&gt;zajęcia z wychowawcą&lt;br /&gt; Fanatyk osranych przystanków " tabindex="0">
+                <span><b>osrany przystanek.</b><br /> Fanatyk osranych przystanków </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:59.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="12:45 - 13:30&lt;br /&gt;Ja w 1996 to 3s robiłem&lt;br /&gt; Szanowny Nauczyciel Piotr " tabindex="0">
+                <span><b>Ja w 1996 to 3s robiłem</b><br /> Szanowny Nauczyciel Piotr  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:59.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="12:45 - 13:30&lt;br /&gt;Ja w 1996 to 3s robiłem&lt;br /&gt; Szanowny Nauczyciel Piotr " tabindex="0">
+                <span><b>Ja w 1996 to 3s robiłem</b><br /> Szanowny Nauczyciel Piotr  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:59.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="12:45 - 13:30&lt;br /&gt;Szmetterlink&lt;br /&gt; Achtung " tabindex="0">
+                <span><b>Szmetterlink</b><br /> Achtung </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:59.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="12:45 - 13:30&lt;br /&gt;N.C.M.T&lt;br /&gt; Ms. Uwaga " tabindex="0">
+                <span><b>N.C.M.T</b><br /> Ms. Uwaga  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:59.375%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="12:45 - 13:30&lt;br /&gt;ZSSR&lt;br /&gt; Ms. Uwaga " tabindex="0">
+                <span><b>ZSSR</b><br /> Ms. Uwaga </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:69.791666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="13:35 - 14:20&lt;br /&gt;Ja w 1996 to 3s robiłem&lt;br /&gt; Szanowny Nauczyciel Piotr " tabindex="0">
+                <span><b>Ja w 1996 to 3s robiłem</b><br /> Szanowny Nauczyciel Piotr  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:69.791666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="13:35 - 14:20&lt;br /&gt;Ja w 1996 to 3s robiłem&lt;br /&gt; Szanowny Nauczyciel Piotr " tabindex="0">
+                <span><b>Ja w 1996 to 3s robiłem</b><br /> Szanowny Nauczyciel Piotr  
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:69.791666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:40.5%;" title="13:35 - 14:20&lt;br /&gt;polityka o LGBTQ+&lt;br /&gt; Drenczek L. " tabindex="0">
+                <span><b>polityka o LGBTQ+</b><br /> Drenczek L. </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:69.791666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:60.5%;" title="13:35 - 14:20&lt;br /&gt;Tutorial do metamfetaminy&lt;br /&gt; Cukrzyk " tabindex="0">
+                <span><b>Tutorial do metamfetaminy</b><br /> Cukrzyk </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:69.791666666667%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:80.5%;" title="13:35 - 14:20&lt;br /&gt;polityka o LGBTQ+&lt;br /&gt; Drenczek L. " tabindex="0">
+                <span><b>polityka o LGBTQ+</b><br /> Drenczek L. </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:80.208333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:0.5%;" title="14:25 - 15:10&lt;br /&gt;Tutorial do metamfetaminy&lt;br /&gt; Cukrzyk " tabindex="0">
+                <span><b>Tutorial do metamfetaminy</b><br /> Cukrzyk </span>
+            </div>
+        </div> 
+        <div class="plansc_cnt_w" style="top:80.208333333333%;height:9.375%;">
+            <div class="bx pz tooltip" alt="Dziennik główny" style="width:19%;left:20.5%;" title="14:25 - 15:10&lt;br /&gt;szkołens&lt;br /&gt; Spoko morda  " tabindex="0">
+                <span><b>szkołens</b><br /> Spoko morda </span>
+            </div>
+        </div><div class="plansc_godz">
+                    <div style="top:0%;">
+                        <span>08:00<br /><b>1</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:9.375%;">
+                        <span>08:45
+                        </span>
+                    </div>
+                    <div style="top:11.458333333333%;">
+                        <span>08:55<br /><b>2</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:20.833333333333%;">
+                        <span>09:40
+                        </span>
+                    </div>
+                    <div style="top:22.916666666667%;">
+                        <span>09:50<br /><b>3</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:32.291666666667%;">
+                        <span>10:35
+                        </span>
+                    </div>
+                    <div style="top:34.375%;">
+                        <span>10:45<br /><b>4</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:43.75%;">
+                        <span>11:30
+                        </span>
+                    </div>
+                    <div style="top:47.916666666667%;">
+                        <span>11:50<br /><b>5</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:57.291666666667%;">
+                        <span>12:35
+                        </span>
+                    </div>
+                    <div style="top:59.375%;">
+                        <span>12:45<br /><b>6</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:68.75%;">
+                        <span>13:30
+                        </span>
+                    </div>
+                    <div style="top:69.791666666667%;">
+                        <span style="top:-3px;">13:35<br /><b>7</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:79.166666666667%;">
+                        <span>14:20
+                        </span>
+                    </div>
+                    <div style="top:80.208333333333%;">
+                        <span style="top:-3px;">14:25<br /><b>8</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:89.583333333333%;">
+                        <span>15:10
+                        </span>
+                    </div>
+                    <div style="top:90.625%;">
+                        <span style="top:-3px;">15:15<br /><b>9</b>
+                        </span>
+                    </div>
+                    <div class="plansc_godz_zak" style="top:100%;">
+                        <span>16:00
+                        </span>
+                    </div></div></div>
+        </div>
+                    <div class="plansc_break" style="clear:both;page-break-after: always;"></div>
+            <script type="text/javascript">
+                //<!--
+                 
+                    $(document).ready(function(){
+                                        
+                    $(".tooltip").css("cursor","help").tipsy({html:true,gravity: "s",opacity: 1});
+                    // dopasowanie wielkosci czcionki do okienka lekcji
+                    
+                    $('.plansc:not(.fixed)').each(function(){
+                        $(this).addClass('fixed');
+                        
+                        var boxes = $(this).find("div.bx");
+                        var all = boxes.length; // pobranie liczby okienek lekcji
+                        for(i=0, zm = false; i<all; i++){
+                            if( parseInt(boxes.eq(i).css("font-size")) > 9 && (boxes.eq(i).children("span").width() > boxes.eq(i).width() || boxes.eq(i).children("span").height() > boxes.eq(i).height())){ // sprawdzenie czy tekst jest wyzszy lub szerszy niz okienko lekcji
+                                boxes.eq(i).css("font-size",(parseInt(boxes.eq(i).css("font-size"))-1)+"px"); // ustawienie czcionki o 1px mniejsze niz aktualna, by tekst mogl sie zmiesscic
+                                zm = true; // ustawienie zmiennej do restartu petli, gdyz zostala dokonana zmiana
+                            }
+
+                            if(i+1 == all && zm == true){ // restart petli gdy wszystkie okienka zostaly sprawdzone i gdy restart jest konieczny
+                                zm = false;
+                                i = -1;
+                            }
+                        }
+                    
+                        $(this).find('.plansc_cnt_w .bx').mouseenter(function(){
+                            if($(this).height() < $(this).children("span").height())
+                                $(this).height( $(this).children("span").height() );
+                        }).mouseleave(function(){
+                                $(this).height( "99.5%" );
+                        });
+                    });
+                    
+                    
+                    $("a.button_right[href*=drukuj], a.button[href*=drukuj]").unbind("click").click(function(){
+                        $('.plany-cnt').addClass('nieDoDruku');
+                        $(this).parents('.plany-cnt').removeClass('nieDoDruku');
+                        javascript:window.print();
+                        return false;
+                    });
+                    
+                    $("a.button_right[href*=drukuj]").attr("href","javascript:;");
+                    
+                    
+                });
+                   
+                if(typeof pBlokowyWyjatek !== "function"){
+                    function pBlokowyWyjatek(wyjatek){
+                        if(!$(wyjatek).nextAll('input').length){
+                            $(wyjatek).parent().append('<input type="text" style="width:0;height:0;border:0;padding:0;" />');
+                            $(wyjatek).nextAll('input').datepicker({dateFormat: 'yy-mm-dd', changeMonth: true,changeYear: true, beforeShow: function(input, inst){
+                                    pBlokowyWyjatekPodswietl(inst, input);
+                                }, onChangeMonthYear: function(year, month, inst){
+                                    pBlokowyWyjatekPodswietl(inst, inst.input);
+                                }
+                            });
+                        }
+                        $(wyjatek).nextAll('input').datepicker('show');
+                    }
+                }
+
+                if(typeof pBlokowyWyjatekPodswietl !== "function"){
+                    function pBlokowyWyjatekPodswietl(inst, input){
+                        setTimeout(function(){
+                            inst.dpDiv.find('[data-handler="selectDay"]').each(function(){
+                                var date = $(this).attr('data-year')+'-'+pad((parseInt($(this).attr('data-month'))+1), 2)+'-'+pad($(this).children().text(), 2);
+                                var is = $(input).parent().children('.wyjatek-wyj').attr('original-title').indexOf(date);
+
+                                if(is != -1){
+                                    $(this).children('a').addClass('ui-state-default-active').addClass('autoTooltip').attr('title','Lekcja jest zapisana dla tego dnia');
+                                }
+                            });
+                        }, 1);
+                    }
+                }
+                //-->
+            </script>
+                    </div>
+
+        <br class="nieDoDruku" />
+    
+<script type="text/javascript">
+$(document).ready(function(){
+    $("a#menu2").addClass('current');
+
+    $('.wyjatek').css('cursor','help').tipsy({html:true,gravity: 's',opacity: 1});
+    
+    $('body').on('change', 'select[name="tydzien"]', function(){
+        if(document.location.href.indexOf('tydzien=') == -1){
+             document.location.href = document.location.href+( document.location.href.indexOf('?') == -1 ? '?' : '&' )+'tydzien='+$(this).val();
+        }else{
+             document.location.href =  document.location.href.replace('tydzien=', 'tydzien='+$(this).val());
+        }
+    });
+});
+</script>    </div>
+
+    <!-- BOTTOM -->
+    <div id="bottom">
+      <div style="float:left; text-align:left; width:796px; font-size:8pt; font-family:Tahoma; color:#000;"> </div>
+      <div style="float:left; text-align:right; width:204px; font-family:Tahoma; font-weight:bold; font-size:8pt;">
+        Copyright &copy; 1969 - 2022
+                <a class="copyrights"" title="Strona Internetowa - Bouik INC." target="_blank">Allah Inc.</a>
+                &reg;      </div>
+              <div style="clear:both"></div>
+    </div>
+
+    <script type="text/javascript">
+    <!--
+      var base_url = '://zspkokanin.mobidziennik.pl/dziennik/';
+      var system_url = '://zspkokanin.mobidziennik.pl';
+      $(document).ready(
+            function()
+            {                
+                $("title").html($("title").html()+" - rok szkolny: 2022/2023");
+                                    if((isMobile() || $(window).width() < 480) && getCookie('infoOMobilnej534') != 1){
+                        oknoDynamiczne('<a class="button_right zamknij" href="javascript:;" title="Zamknij okno">X</a><h1 class="h1_01">Powiadomienie o wersji mobilnej systemu</h1><div style="padding:10px;"><img src="://zspkokanin.mobidziennik.pl/grafika/ikonka_nowa_wersja.png" align="left" style="margin-right:15px;" alt="" /><strong>Drogi użytkowniku</strong><br /><br />Dostępna jest wersja mobilna wersja systemu dla rodzica i ucznia. Posiada ona możliwości standardowej wersji, lecz jest stworzona w taki sposób, by jej przeglądanie było czystą przyjemnością.<br /><br /><a href="://zspkokanin.mobidziennik.pl/mobile">Kliknij tutaj, aby przejść do wersji mobilnej</a>');
+                        setCookie('infoOMobilnej534', 1, 30);
+                    }                                    
+                                }
+      );      
+    //-->
+    </script>
+    
+    <script type="text/javascript">
+<!--
+    $(document).ready(
+        function()
+        {            
+                            var data_poniedzialek = '2022-09-12';
+                if(data_poniedzialek && $('select[name="data_poniedzialek"]').get(0))
+                {
+                    $('select[name="data_poniedzialek"]').each(
+                        function() {
+                            if($(this).find('option:selected').val()!=data_poniedzialek)
+                            {
+                                $(this).find('option[value="2022-09-12"]').attr('selected','selected');
+                                //$(this).change(); // NIE ODKOMENTOWYWAĆ PRZE NIGDY !
+                            }
+                        }
+                    );
+                }
+                        }
+    );
+//-->
+</script>    
+    </body>
+</html>
